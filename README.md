@@ -52,7 +52,9 @@ bundle exec jekyll serve
 ### 글 작성
 - ```_featured_categories```, ```_featured_tags``` 설정한 후, ```_posts```에 글을 작성합니다
 - 글 제목 형태는 ```2018-01-03-title1.md``` 이런 방식처럼 작성! 날짜를 빼고 쓰면 반영되지 않습니다
-- 코드에 빨간 색으로 Highlihgting을 하고 싶은 경우, md 파일 내에 밑과 같이 코드를 작성하면 된다. 
+- `_data/authors.yml`에 글 쓴 post에 저자로 등록할 author 정보 입력하고 나서, 아래와 같이 `authors: {author의 Key 값}`을 작성하면 된다. 
+- 코드에 빨간 색으로 Highlihgting을 하고 싶은 경우, md 파일 내에 밑과 같이 코드를 작성하면 된다.
+
 ```
 ---
 layout: post
@@ -61,6 +63,7 @@ subtitle: "첫 글"
 categories: etc
 tags: diary
 comments: true
+authors: jaeseong
 ---
 
 (일반적인 마크다운 코드 작성)
@@ -87,8 +90,3 @@ comments: true
 ### Github Blog
 - 이 블로그는 [변성윤](https://github.com/zzsza/zzsza.github.io), [박민](https://github.com/isme2n/isme2n.github.io)님 블로그 테마를 기반으로 제작되었습니다
 - 본 테마를 사용하고 싶으신 경우, issue 또는 메일([qkrwotjd1445@naver.com](qkrwotjd1445@naver.com))로 사용 요청을 해주세요:)
-
----
-### 추가할 기능
-- disqus의 비정상 작동으로 인해, Facebook 댓글 기능으로 변경
-- Google 애드센스 달기
