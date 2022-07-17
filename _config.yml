@@ -18,16 +18,19 @@ baseurl:             ""
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  Success is not the key to happiness. Happiness is the key to success.
+#  Success is not the key to happiness. Happiness is the key to success.
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
   name:              jaeseong
-  email:             qkrwotjd1445@naver.com
+  email:             ceo@jscode.kr
 
 # Fallback image and color
 image:               /assets/img/nap.jpg
 color:               '#4f86aa'
+
+# Logo
+logo: /assets/img/logo.png
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
 font_heading:        "'Lato', 'Sans-serif'"

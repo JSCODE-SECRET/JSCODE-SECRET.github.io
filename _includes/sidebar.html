@@ -21,18 +21,21 @@
       <div style="clear: both;"></div>
     </form>
     <br/>
-      <div class="sidebar-box">
-        {% if author.picture %}
-          {% include srcset-img.html class="me" img=author.picture alt=author.name %}
-        {% endif %}
-      </div>
-      {{ site.description | truncatewords:50 | markdownify }}
-      {% assign author = site.data.authors.first[1] %}
-      {% if author.social %}
-        <div class="sidebar-social">
-          {% include social.html social=author.social %}
-        </div>
+    <div class="sidebar-box">
+      {% if site.logo %}
+        {% include srcset-img.html class="me" img=site.logo alt='logo' %}
       {% endif %}
+    </div>
+
+    <!--  -->
+    {{ site.description | truncatewords:50 | markdownify }}
+    {% assign author = site.data.authors.first[1] %}
+    {% if author.social %}
+      <div class="sidebar-social">
+        {% include social.html social=author.social %}
+      </div>
+    {% endif %}
+
     </header>
   </div>
 </div>
