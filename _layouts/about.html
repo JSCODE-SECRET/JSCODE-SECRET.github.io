@@ -9,12 +9,14 @@ layout: base
   <h1 class="page-title hr" style="padding-bottom:1rem">{{ page.title }}</h1>
 
   <div class="author-body">
-
-  {% if author.picture %}
-    {% include srcset-img.html class="me" img=author.picture alt=author.name %}
-  {% endif %}
-    <div class="author-body-description">
-      {{ author.about | markdownify }}
+    {% if site.logo-black %}
+      {% include srcset-img.html class="me" img=site.logo-black alt='logo' %}
+    {% endif %}
+    <div class="author-body-description" style="margin-bottom:10px;">
+      <div class="about-author-name">
+        JSCODE
+      </div>
+      최상위 현업 개발자들의 프로그래밍 교육 및 컨설팅, 파트너십
     </div>
   </div>
   <div class="markdown-body">

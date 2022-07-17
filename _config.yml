@@ -31,6 +31,7 @@ color:               '#4f86aa'
 
 # Logo
 logo: /assets/img/logo.png
+logo-black: /assets/img/logo-black.png
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
 font_heading:        "'Lato', 'Sans-serif'"
