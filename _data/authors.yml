@@ -61,8 +61,8 @@ jaeseong:
     rss:             https://jaeseongdev.github.io/feed.xml
 
 # Another author
-jeonseol:
-  name:              전설 (JeonSeol)
+seol:
+  name:              전설 (Jeon Seol)
   email:             mail@domain
   about:             |
     (소개소개소개)
@@ -71,4 +71,17 @@ jeonseol:
     github:          <username>
     twitter:         <username>
   image: /assets/img/authors/ori.png
+  color: '#268bd2'
+
+# Another author
+moonho:
+  name:              박문호 (Park Moonho)
+  email:             mail@domain
+  about:             |
+    (소개소개소개)
+  picture:           /assets/img/authors/moonho.png
+  social:
+    github:          <username>
+    twitter:         <username>
+  image: /assets/img/authors/moonho.png
   color: '#268bd2'
