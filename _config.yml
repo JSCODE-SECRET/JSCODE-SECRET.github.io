@@ -13,7 +13,7 @@ url:                 https://tech.jscode.kr
 baseurl:             ""
 
 # A very short description of your page
-#tagline:             최상위 현업 개발자들의 프로그래밍 교육, 컨설팅 및 파트너십
+tagline:             최상위 현업 개발자들의 프로그래밍 교육, 컨설팅 및 파트너십
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
