@@ -1,6 +1,5 @@
 ### Feature
 - [구글 애널리틱스](https://analytics.google.com/analytics/web/?hl=ko&pli=1) (유저 데이터 분석용)
-- [댓글 기능](https://blog.disqus.com/)
 - [구글 검색 엔진 트래킹](https://search.google.com/search-console/about)
 - [네이버 검색 엔진 트래킹](https://searchadvisor.naver.com/)
 
