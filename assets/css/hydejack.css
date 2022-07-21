@@ -58,7 +58,18 @@
 }
 
 .markdown-body a {
+  text-decoration: underline;
+  color: #00c3bd !important;
+}
+
+.markdown-body strong {
+  color: rgba(212, 76, 71, 1) !important;
+}
+
+.markdown-body em {
   background: #FFF9C4;
+  font-style: normal;
+  font-weight: bold !important;
 }
 
 .markdown-body code,

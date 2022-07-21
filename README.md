@@ -51,28 +51,16 @@ bundle exec jekyll serve
 - ```_featured_categories```, ```_featured_tags``` 설정한 후, ```_posts```에 글을 작성합니다
 - 글 제목 형태는 ```2018-01-03-title1.md``` 이런 방식처럼 작성! 날짜를 빼고 쓰면 반영되지 않습니다
 - `_data/authors.yml`에 글 쓴 post에 저자로 등록할 author 정보 입력하고 나서, 아래와 같이 `authors: {author의 Key 값}`을 작성하면 된다. 
-- 코드에 빨간 색으로 Highlihgting을 하고 싶은 경우, md 파일 내에 밑과 같이 코드를 작성하면 된다.
+- Highlihgting을 하고 싶은 경우, md 파일 내에 밑과 같이 코드를 작성하면 된다.
 
+**빨간색 굵은 글씨**
 ```
----
-layout: post
-title:  "첫 글"
-subtitle: "첫 글"
-categories: etc
-tags: diary
-comments: true
-authors: jaeseong
----
+**내용** 
+```
 
-(일반적인 마크다운 코드 작성)
-
-{% include code-block.html content=
-"<span style='color:red !important'>빨간색을 적용하고 싶은 코드의 줄</span>
-일반 코드를 작성하고 싶은 코드의 줄
-일반 코드를 작성하고 싶은 코드의 줄"
-%}
-
-(일반적인 마크다운 코드 작성)
+**노란 형광펜 굵은 글씨**
+```
+*내용*
 ```
 
 ### Commit 메시지 형태
