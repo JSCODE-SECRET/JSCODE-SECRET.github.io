@@ -113,4 +113,4 @@ AWS EC2를 사용하면 고성능 애플리케이션, 장기 실행 애플리케
 
 # References
 
-[AWS Lambda vs. Amazon EC2: Comprehensive Comparison](https://www.nakivo.com/blog/aws-lambda-vs-amazon-ec2-which-one-to-choose/)
+- [AWS Lambda vs. Amazon EC2: Comprehensive Comparison](https://www.nakivo.com/blog/aws-lambda-vs-amazon-ec2-which-one-to-choose/)
