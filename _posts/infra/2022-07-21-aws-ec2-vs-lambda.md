@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 'AWS EC2 vs AWS Lambda'
-subtitle: 'AWS EC2 vs AWS Lambda'
+title: 'AWS EC2 vs Lambda'
+subtitle: 'AWS EC2 vs aLambda'
 categories: Infra
 comments: false
 ---
