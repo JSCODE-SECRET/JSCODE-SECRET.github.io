@@ -28,7 +28,7 @@ AWS EC2(Amazon Web Services Elastic Compute Cloud)는 클라우드에서 EC2 인
 - Lambda는 Amazon의 FaaS(Function as a Service)의 일종이다.
 - AWS Lambda는 인프라 구성이 아닌 코드 작성에 집중할 수 있다.
 
-# ****사용 사례****
+# 사용 사례
 
 ### EC2
 
