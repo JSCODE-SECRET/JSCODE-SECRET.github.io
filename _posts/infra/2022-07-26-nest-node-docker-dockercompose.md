@@ -16,7 +16,7 @@ comments: false
 
 > ✅ Dockerfile, docker-compose.yml은 배포 환경에서 사용되고, Dockerfile.dev, docker-compose.yml은 개발 환경에서 사용된다.
 
-### **.dockerignore**
+### .dockerignore
 
 ```docker
 node_modules/
@@ -24,7 +24,7 @@ node_modules/
 
 - `node_modules`는 `Dockerfile`에서 `COPY`를 할 때 복사되지 않는다. `node_modules`는 용량이 너무 크기 때문에 `COPY`를 해서 이미지로 만드는 것보다, 베이스 이미지 내에서 `$ npm install`로 모듈을 새로 받아서 이미지를 만드는 것이 훨씬 효율적이다.
 
-### **Dockerfile**
+### Dockerfile
 
 ```
 FROM node:16-alpine
@@ -64,7 +64,7 @@ CMD ["node", "dist/main.js"]
 - `CMD`
     - 베이스 이미지 내에서 실행되는 명령어가 아니라, 해당 이미지가 컨테이너화 됐을 때 최초로 실행되는 명령어를 의미한다. (RUN과 CMD가 다른 점은, 베이스 이미지 내에서 실행되느냐, 아니면 이미지가 컨테이너로 실행됐을 때 실행되느냐의 차이이다.)
 
-### **docker-compose.yml**
+### docker-compose.yml
 
 ```docker
 version: "3.9"
@@ -83,7 +83,7 @@ services:
 - `container_name` : 이미지를 컨테이너화 시킬 때 붙여줄 컨테이너 이름
 - `image` : pull해서 사용할 이미지 이름 (먼저 local에 있는 지 체크하고, local에 없다면 dockerhub에 있는 지 체크한다.)
 
-### **Dockerfile.dev**
+### Dockerfile.dev
 
 ```docker
 FROM node:16-alpine
@@ -103,7 +103,7 @@ ENV NODE_ENV development
 CMD ["node", "dist/main.js"]
 ```
 
-### **docker-compose.dev.yml**
+### docker-compose.dev.yml
 
 ```docker
 version: "3.9"
@@ -121,14 +121,14 @@ services:
 
 # 2. Dockerfile을 바탕으로 이미지 빌드하기
 
-### **Dockerfile을 바탕으로 이미지 빌드하기**
+### Dockerfile을 바탕으로 이미지 빌드하기
 
 ```docker
 $ docker build -t jaeseongdev/onlyone-prod-servrer ./
 ```
 
-### **Dockerfile.dev를 바탕으로 이미지 빌드하기
-(Dockerfile.dev가 있는 디렉토리에서 아래의 명령어를 실행해야 함.)**
+### Dockerfile.dev를 바탕으로 이미지 빌드하기
+(Dockerfile.dev가 있는 디렉토리에서 아래의 명령어를 실행해야 함.)
 
 ```docker
 $ docker build -f Dockerfile.dev -t jaeseongdev/onlyone-dev-servrer ./
@@ -136,13 +136,13 @@ $ docker build -f Dockerfile.dev -t jaeseongdev/onlyone-dev-servrer ./
 
 # 3. docker-compose를 활용해 빌드된 이미지로 컨테이너 실행시키기
 
-### **배포 환경인 docker-compose.yml로 컨테이너 실행시키기**
+### 배포 환경인 docker-compose.yml로 컨테이너 실행시키기
 
 ```docker
 $ docker-compose -f docker-compose.yml up -d
 ```
 
-### **개발 환경인 docker-compose.dev.yml로 컨테이너 실행시키기**
+### 개발 환경인 docker-compose.dev.yml로 컨테이너 실행시키기
 
 ```docker
 $ docker-compose -f docker-compose.dev.yml up -d
